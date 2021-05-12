@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <p className='text-red-500'>
+        <p className='text-[red]'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, minus
           debitis vel laborum sequi reiciendis nisi expedita animi temporibus?
           Cumque vitae temporibus beatae? Minus illo consequatur blanditiis,
