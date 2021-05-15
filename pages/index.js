@@ -8,7 +8,18 @@ export default function Home() {
         <link rel='icon' href='/favicon.png' />
       </Head>
 
-      <main>
+      <main className='min-h-screen flex items-center justify-center'>
+        <img
+          src='/bg-pattern-top-desktop.svg'
+          alt='Background pattern top dekstop'
+          className='absolute left-0 top-0'
+        />
+        <img
+          src='/bg-pattern-bottom-desktop.svg'
+          alt='Background pattern bottom dekstop'
+          className='absolute right-0 bottom-0'
+        />
+        <div></div>
         <p>10,000+ of our users love our products.</p>
 
         <p>
