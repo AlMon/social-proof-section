@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import ReviewSingle from '../components/ReviewSingle'
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.png' />
       </Head>
 
-      <main className='min-h-screen flex items-center justify-center'>
+      <main className='min-h-screen flex justify-center'>
         <img
           src='/bg-pattern-top-desktop.svg'
           alt='Background pattern top dekstop'
@@ -19,17 +20,29 @@ export default function Home() {
           alt='Background pattern bottom dekstop'
           className='absolute right-0 bottom-0'
         />
-        <div></div>
-        <p>10,000+ of our users love our products.</p>
+        <div>
+          <div className='container'>
+            <div className='grid grid-cols-2'>
+              <div>
+                <h1>10,000+ of our users love our products.</h1>
+                <p className=''>
+                  We only provide great products combined with excellent
+                  customer service. See what our satisfied customers are saying
+                  about our services.
+                </p>
+              </div>
 
-        <p>
-          We only provide great products combined with excellent customer
-          service. See what our satisfied customers are saying about our
-          services.
-        </p>
+              <div>
+                <ReviewSingle stars={5} publication='Reviews' />
+                <ReviewSingle stars={5} publication='Report Guru' />
+                <ReviewSingle stars={5} publication='BestTech' />
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <p>
-          Rated 5 Stars in Reviews Rated 5 Stars in Report Guru Rated 5 Stars in
+        {/* <p>
+           Rated 5 Stars in Report Guru Rated 5 Stars in
           BestTech
         </p>
 
@@ -49,7 +62,7 @@ export default function Home() {
           Anne Wallace Verified Buyer "Put an order with this company and can
           only praise them for the very high standard. Will definitely use them
           again and recommend them to everyone!"
-        </p>
+        </p> */}
       </main>
     </div>
   )
