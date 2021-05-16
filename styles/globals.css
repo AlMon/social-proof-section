@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .review {
+    @apply flex items-center my-4 py-[14px] px-7 bg-[#f7f2f7] text-white font-semibold rounded-lg w-[425px];
+  }
+}

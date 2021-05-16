@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ReviewSingle from '../components/ReviewSingle'
+import Review from '../components/Review'
 import Testimonial from '../components/Testimonial'
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
           className='absolute right-0 bottom-0'
         />
         <div>
-          <div className='container px-16'>
+          <div className='container px-24'>
             <div className='grid grid-cols-2 pt-32'>
               <div className='max-w-md'>
                 <h1 className='text-[#502050] text-[46px] leading-[3.2rem] font-bold'>
@@ -35,10 +35,18 @@ export default function Home() {
                 </p>
               </div>
 
-              <div>
-                <ReviewSingle stars={5} publication='Reviews' />
-                <ReviewSingle stars={5} publication='Report Guru' />
-                <ReviewSingle stars={5} publication='BestTech' />
+              <div className='px-10'>
+                <Review stars={5} publication='Reviews' className='review' />
+                <Review
+                  stars={5}
+                  publication='Report Guru'
+                  className='review ml-10'
+                />
+                <Review
+                  stars={5}
+                  publication='BestTech'
+                  className='review ml-20'
+                />
               </div>
             </div>
 
