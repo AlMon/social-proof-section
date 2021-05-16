@@ -4,7 +4,7 @@ import Testimonial from '../components/Testimonial'
 
 export default function Home() {
   return (
-    <div>
+    <div className='max-w-full'>
       <Head>
         <title>Social Proof Section</title>
         <link rel='icon' href='/favicon.png' />
@@ -14,15 +14,15 @@ export default function Home() {
         <img
           src='/bg-pattern-top-desktop.svg'
           alt='Background pattern top dekstop'
-          className='absolute left-0 top-0'
+          className='absolute left-0 top-0 z-0'
         />
         <img
           src='/bg-pattern-bottom-desktop.svg'
           alt='Background pattern bottom dekstop'
-          className='absolute right-0 bottom-0'
+          className='absolute right-0 bottom-0 z-0'
         />
-        <div>
-          <div className='container px-24'>
+        <div className='z-10'>
+          <div className='container px-[90px]'>
             <div className='grid grid-cols-1 lg:grid-cols-2 pt-32'>
               <div className='max-w-md'>
                 <h1 className='text-[#502050] text-[46px] leading-[3.2rem] font-bold'>
@@ -57,7 +57,7 @@ export default function Home() {
                 quote='We needed the same printed design as the
           one we had ordered a week prior. Not only did they find the original
           order, but we also received it in time. Excellent!'
-                className='testimonial'
+                className='testimonial pr-10'
               />
               <Testimonial
                 avatar='/image-irene.jpg'
@@ -65,7 +65,7 @@ export default function Home() {
                 quote='Customer service is always excellent and
                 very quick turn around. Completely delighted with the simplicity of
                 the purchase and the speed of delivery.'
-                className='testimonial mt-9'
+                className='testimonial mt-9  mx-7'
               />
               <Testimonial
                 avatar='/image-anne.jpg'
