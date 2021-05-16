@@ -6,10 +6,10 @@
 
 @layer components {
   .review {
-    @apply flex items-center my-4 py-[15px] px-7 bg-[#f7f2f7] text-white font-semibold rounded-lg w-[440px];
+    @apply flex items-center my-4 py-[15px] px-7 bg-[#f7f2f7] text-white font-bold rounded-lg w-[440px];
   }
 
   .testimonial {
-    @apply;
+    @apply items-center mx-[13px] my-4 py-10 px-8 bg-[#502050] text-white rounded-lg h-full;
   }
 }

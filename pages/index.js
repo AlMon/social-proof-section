@@ -23,7 +23,7 @@ export default function Home() {
         />
         <div>
           <div className='container px-24'>
-            <div className='grid grid-cols-2 pt-32'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 pt-32'>
               <div className='max-w-md'>
                 <h1 className='text-[#502050] text-[46px] leading-[3.2rem] font-bold'>
                   10,000+ of our users love our products.
@@ -50,13 +50,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='grid grid-cols-3'>
+            <div className='flex my-14'>
               <Testimonial
                 avatar='/image-colton.jpg'
                 name='Colton Smith'
                 quote='We needed the same printed design as the
           one we had ordered a week prior. Not only did they find the original
           order, but we also received it in time. Excellent!'
+                className='testimonial'
               />
               <Testimonial
                 avatar='/image-irene.jpg'
@@ -64,6 +65,7 @@ export default function Home() {
                 quote='Customer service is always excellent and
                 very quick turn around. Completely delighted with the simplicity of
                 the purchase and the speed of delivery.'
+                className='testimonial mt-9'
               />
               <Testimonial
                 avatar='/image-anne.jpg'
@@ -71,6 +73,7 @@ export default function Home() {
                 quote='Put an order with this company and can
                 only praise them for the very high standard. Will definitely use them
                 again and recommend them to everyone!'
+                className='testimonial mt-14'
               />
             </div>
           </div>

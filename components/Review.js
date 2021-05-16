@@ -13,7 +13,7 @@ function Review(props) {
             />
           ))}
       </span>
-      <span className='text-[#502050] text-[13px] mt-[7px] ml-6'>
+      <span className='text-[#502050] text-[13.5px] mt-[5px] ml-6'>
         Rated {props.stars} Stars in {props.publication}
       </span>
     </div>
