@@ -7,7 +7,7 @@ function Testimonial(props) {
           alt={props.name}
           className='rounded-full h-10 col-span-2'
         />
-        <h3 className='col-span-7 text-[13px] font-bold pt-[2px]'>
+        <h3 className='col-span-7 text-[13px] font-bold pt-[2px] text-left'>
           {props.name} <br />{' '}
           <span className='font-medium text-[#ee68a4]'>Verified Buyer</span>
         </h3>
