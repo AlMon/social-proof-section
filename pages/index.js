@@ -22,11 +22,13 @@ export default function Home() {
           className='absolute right-0 bottom-0'
         />
         <div>
-          <div className='container'>
-            <div className='grid grid-cols-2'>
-              <div>
-                <h1>10,000+ of our users love our products.</h1>
-                <p className=''>
+          <div className='container px-16'>
+            <div className='grid grid-cols-2 pt-32'>
+              <div className='max-w-md'>
+                <h1 className='text-[#502050] text-[46px] leading-[3.2rem] font-bold'>
+                  10,000+ of our users love our products.
+                </h1>
+                <p className='text-[#937b92] text-sm mt-3 font-medium leading-6'>
                   We only provide great products combined with excellent
                   customer service. See what our satisfied customers are saying
                   about our services.
